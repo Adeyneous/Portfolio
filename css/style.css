@@ -1,0 +1,259 @@
+body {
+  background: #0f1010; /* Dark background, no image */
+  color: #ffffff; /* White text for better contrast on dark background */
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  flex-direction: column;
+}
+
+.title {
+  font-size: 2rem;
+  color: #ffffff;
+  margin-bottom: 1rem;
+}
+
+h1 {
+  font-size: 2rem;
+  margin: 0;
+  color: #ffffff; /* White text for header */
+}
+nav ul {
+  display: flex;
+  justify-content: center; /* This will center the nav items */
+  list-style: none;
+  padding: 0;
+}
+nav ul li {
+  margin: 0 1rem;
+}
+nav ul li a {
+  color: #ffffff; /* White text for navigation links */
+  text-decoration: none;
+}
+nav ul li a:hover {
+  text-decoration: underline;
+  color: #a020f0; /* Purple hover color */
+}
+main {
+  margin: 2rem;
+}
+main p {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #000000; /* Black text for paragraphs */
+}
+main p span {
+  color: #a020f0; /* Purple color for span elements */
+}
+button {
+  background-color: #a020f0; /* Purple background for buttons */
+  border: none;
+  border-radius: 0.5rem;
+  color: #ffffff; /* White text for buttons */
+  cursor: pointer;
+  font-size: 1.5rem;
+  padding: 0.5rem 1rem;
+}
+button:hover {
+  background-color: #6600cc; /* Darker purple for button hover state */
+}
+footer {
+  background-color: #222; /* Dark background for footer */
+  padding: 1rem;
+  text-align: center;
+}
+footer ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+footer ul li {
+  margin: 0 1rem;
+}
+footer ul li a {
+  color: #ffffff; /* White text for footer links */
+  text-decoration: none;
+}
+footer ul li a:hover {
+  text-decoration: underline;
+}
+
+.content-container {
+  display: flex;
+  align-items: center; /* Vertical alignment */
+  justify-content: center; /* Horizontal alignment */
+  min-height: 100vh; /* Full viewport height */
+  padding: 20px; /* Add padding as needed */
+}
+
+.picture-box {
+  width: 32.8%; /* Adjust as needed for your design */
+  border: 2px solid #FFFFFF; /* Example of a white border; adjust the color as needed */
+  box-shadow: 0 4px 8px 0 rgba(237, 235, 235, 0.2), /* Horizontal offset, vertical offset, blur radius, spread radius, color */
+              0 6px 20px 0 rgba(122, 122, 122, 0.19); /* Same as above for a more diffuse shadow */
+  /* Additional styles for the picture box */
+}
+
+
+.welcome-message-container {
+  /* Assuming you want the text container to take up the remaining space */
+  flex: 2; /* Adjust as needed, this will define the proportion of the container relative to the picture-box */
+  display: flex;
+  flex-direction: column; /* Stack children vertically */
+  justify-content: center; /* Center vertically */
+  align-items: flex-start; /* Align text to the start of the container (left aligned) */
+  text-align: left; /* Align the text inside the container to the left */
+  padding: 20px; /* Add padding as needed */
+  margin-left: 20px; /* Add margin to separate from the picture box */
+}
+
+.welcome-message span {
+  font-size: 1.3rem; /* Your desired font size */
+  line-height: 1.6; /* Adjust line-height for better readability and alignment */
+  color: white; /* Default text color */
+}
+
+.welcome-message span.purple-text {
+  color: purple;
+}
+
+.download-button {
+  margin-top: 20px; /* Space above the button */
+  /* Additional button styling */
+  align-self: flex-start;
+  
+}
+
+/* Responsive adjustments as needed */
+@media (max-width: 768px) {
+  .content-container {
+    flex-direction: column;
+  }
+  .picture-box,
+  .welcome-message-container {
+    width: 100%; /* Full width on smaller screens */
+  }
+}
+
+.about-container {
+  display: flex;
+  align-items: center; /* Vertical alignment */
+  justify-content: center; /* Horizontal alignment */
+  min-height: 100vh; /* Full viewport height */
+  padding: 20px; /* Add padding as needed */
+}
+
+.about-picture-box {
+  width: 20.1%; /* Adjust as needed for your design */
+  border: 2px solid #FFFFFF; /* Example of a white border; adjust the color as needed */
+  box-shadow: 0 4px 8px 0 rgba(237, 235, 235, 0.2), /* Horizontal offset, vertical offset, blur radius, spread radius, color */
+              0 6px 20px 0 rgba(122, 122, 122, 0.19); /* Same as above for a more diffuse shadow */
+  /* Additional styles for the picture box */
+}
+
+
+.about-message-container{
+  /* Assuming you want the text container to take up the remaining space */
+  flex: 2; /* Adjust as needed, this will define the proportion of the container relative to the picture-box */
+  display: flex;
+  flex-direction: column; /* Stack children vertically */
+  justify-content: center; /* Center vertically */
+  align-items: flex-start; /* Align text to the start of the container (left aligned) */
+  text-align: left; /* Align the text inside the container to the left */
+  padding: 20px; /* Add padding as needed */
+  margin-left: 20px; /* Add margin to separate from the picture box */
+}
+
+.about-message- span {
+  font-size: 1.3rem; /* Your desired font size */
+  line-height: 1.6; /* Adjust line-height for better readability and alignment */
+  color: white; /* Default text color */
+}
+
+.about-message- span.purple-text {
+  color: purple;
+}
+
+
+
+
+
+
+
+
+.skills-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Center items horizontally */
+  gap: 20px; /* Space between items */
+  max-width: 960px; /* Adjust as needed */
+  margin: auto; /* Center the container on the page */
+}
+
+.skill-item {
+  display: flex;
+  flex-direction: column; /* Stack the elements vertically */
+  align-items: center; /* Center-align items horizontally */
+  text-align: center; /* Center-align the text for each skill item */
+  flex-basis: 20%; /* Adjust this value depending on how many items you want per row */
+  /* Ensure there's enough space for the text */
+}
+
+.circle-background,
+.circle-progress {
+  stroke-width: 10;
+  transition: stroke-dashoffset 1s ease-out;
+}
+
+.circle-background {
+  stroke: #ddd;
+}
+
+.circle-progress {
+  stroke: #8400ff; /* Example color for the progress bar */
+  transform: rotate(-90deg);
+  transform-origin: 50% 50%;
+}
+
+.circle-text {
+  fill: white;
+  font-size: 1rem;
+  font-weight: bold;
+  alignment-baseline: middle;
+  text-anchor: middle;
+}
+
+
+.skill-percentage {
+  height: 25px; /* Set the height of the rating bar */
+  background-color: rgb(99, 27, 200); /* Your color for the percentage bar */
+  color: white;
+  /* Add other styles like border-radius, etc. */
+}
+
+.skill-name {
+  color: white;
+  text-align: center;
+  margin-top: 8px;
+}
+
+.skill-description {
+  text-align: center; /* Centers the text */
+  width: 100%; /* Ensures the block spans the full width of the skills container */
+  margin-top: 20px; /* Adds space above the experience block */
+  color: rgb(242, 240, 245); /* Sets the text color */
+  font-size: 1rem; /* Adjusts the font size */
+  /* Ensure the experience description block is a flex item that can be centered */
+  flex-basis: 100%; /* Take full width */
+}
+
+/* Add hover effects and other styles as needed */
+
